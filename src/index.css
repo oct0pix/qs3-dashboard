@@ -1,0 +1,238 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/bricolage-grotesque";
+@import "@fontsource-variable/inter-tight";
+@import "@fontsource-variable/jetbrains-mono";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-heading: 'Bricolage Grotesque Variable', sans-serif;
+    --font-sans: 'Inter Tight Variable', sans-serif;
+    --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+    --color-reject: var(--reject);
+    --color-caution: var(--caution);
+    --color-live: var(--live);
+    --color-rule: var(--rule);
+    --color-sidebar-ring: var(--sidebar-ring);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar: var(--sidebar);
+    --color-chart-5: var(--chart-5);
+    --color-chart-4: var(--chart-4);
+    --color-chart-3: var(--chart-3);
+    --color-chart-2: var(--chart-2);
+    --color-chart-1: var(--chart-1);
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+    --background: oklch(1 0 0);
+    --foreground: oklch(0.145 0 0);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.145 0 0);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.145 0 0);
+    --primary: oklch(0.205 0 0);
+    --primary-foreground: oklch(0.985 0 0);
+    --secondary: oklch(0.97 0 0);
+    --secondary-foreground: oklch(0.205 0 0);
+    --muted: oklch(0.97 0 0);
+    --muted-foreground: oklch(0.556 0 0);
+    --accent: oklch(0.97 0 0);
+    --accent-foreground: oklch(0.205 0 0);
+    --destructive: oklch(0.577 0.245 27.325);
+    --border: oklch(0.922 0 0);
+    --input: oklch(0.922 0 0);
+    --ring: oklch(0.708 0 0);
+    --chart-1: oklch(0.87 0 0);
+    --chart-2: oklch(0.556 0 0);
+    --chart-3: oklch(0.439 0 0);
+    --chart-4: oklch(0.371 0 0);
+    --chart-5: oklch(0.269 0 0);
+    --radius: 0.625rem;
+    --sidebar: oklch(0.985 0 0);
+    --sidebar-foreground: oklch(0.145 0 0);
+    --sidebar-primary: oklch(0.205 0 0);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.97 0 0);
+    --sidebar-accent-foreground: oklch(0.205 0 0);
+    --sidebar-border: oklch(0.922 0 0);
+    --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
+    --card: oklch(0.205 0 0);
+    --card-foreground: oklch(0.985 0 0);
+    --popover: oklch(0.205 0 0);
+    --popover-foreground: oklch(0.985 0 0);
+    --primary: oklch(0.922 0 0);
+    --primary-foreground: oklch(0.205 0 0);
+    --secondary: oklch(0.269 0 0);
+    --secondary-foreground: oklch(0.985 0 0);
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --accent: oklch(0.269 0 0);
+    --accent-foreground: oklch(0.985 0 0);
+    --destructive: oklch(0.704 0.191 22.216);
+    --border: oklch(1 0 0 / 10%);
+    --input: oklch(1 0 0 / 15%);
+    --ring: oklch(0.556 0 0);
+    --chart-1: oklch(0.87 0 0);
+    --chart-2: oklch(0.556 0 0);
+    --chart-3: oklch(0.439 0 0);
+    --chart-4: oklch(0.371 0 0);
+    --chart-5: oklch(0.269 0 0);
+    --sidebar: oklch(0.205 0 0);
+    --sidebar-foreground: oklch(0.985 0 0);
+    --sidebar-primary: oklch(0.488 0.243 264.376);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.269 0 0);
+    --sidebar-accent-foreground: oklch(0.985 0 0);
+    --sidebar-border: oklch(1 0 0 / 10%);
+    --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+  html {
+    @apply font-sans;
+    }
+}
+
+/* ---------------------------------------------------------------------------
+   Laboratory logbook, not a trading terminal.
+
+   The convention this deliberately breaks: green for good. This system has
+   never made money and publishing a green number would be the page telling a
+   story the data does not support. So passing states are plain ink, and the
+   only saturated colour on the page is the rejection stamp — because
+   rejections are what this research has actually produced.
+
+   The ground is a cool paper grey rather than the warm cream that shows up on
+   every dashboard; the cast is deliberate, to read as newsprint under a lamp
+   rather than as a lifestyle brand.
+   --------------------------------------------------------------------------- */
+:root {
+    --ground: oklch(0.918 0.006 120);
+    --ink: oklch(0.185 0.012 120);
+    --reject: oklch(0.452 0.148 32);
+    --caution: oklch(0.598 0.108 78);
+    --live: oklch(0.436 0.052 178);
+    --rule: oklch(0.828 0.008 120);
+
+    --background: var(--ground);
+    --foreground: var(--ink);
+    --card: oklch(0.958 0.004 120);
+    --card-foreground: var(--ink);
+    --popover: oklch(0.958 0.004 120);
+    --popover-foreground: var(--ink);
+    --primary: var(--ink);
+    --primary-foreground: var(--ground);
+    --secondary: oklch(0.878 0.006 120);
+    --secondary-foreground: var(--ink);
+    --muted: oklch(0.878 0.006 120);
+    --muted-foreground: oklch(0.462 0.010 120);
+    --accent: oklch(0.878 0.010 120);
+    --accent-foreground: var(--ink);
+    --destructive: var(--reject);
+    --border: var(--rule);
+    --input: var(--rule);
+    --ring: oklch(0.462 0.010 120);
+    --radius: 0.125rem;
+}
+
+.dark {
+    --ground: oklch(0.178 0.010 120);
+    --ink: oklch(0.912 0.006 120);
+    --reject: oklch(0.598 0.152 32);
+    --caution: oklch(0.712 0.112 78);
+    --live: oklch(0.628 0.058 178);
+    --rule: oklch(0.302 0.008 120);
+
+    --background: var(--ground);
+    --foreground: var(--ink);
+    --card: oklch(0.218 0.008 120);
+    --card-foreground: var(--ink);
+    --popover: oklch(0.218 0.008 120);
+    --popover-foreground: var(--ink);
+    --primary: var(--ink);
+    --primary-foreground: var(--ground);
+    --secondary: oklch(0.262 0.008 120);
+    --secondary-foreground: var(--ink);
+    --muted: oklch(0.262 0.008 120);
+    --muted-foreground: oklch(0.652 0.010 120);
+    --accent: oklch(0.282 0.010 120);
+    --accent-foreground: var(--ink);
+    --destructive: var(--reject);
+    --border: var(--rule);
+    --input: var(--rule);
+    --ring: oklch(0.652 0.010 120);
+}
+
+body {
+    font-feature-settings: "tnum" 1, "cv05" 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+    font-family: var(--font-heading);
+    font-variation-settings: "wdth" 92, "opsz" 32;
+    letter-spacing: -0.022em;
+}
+
+.tabular { font-variant-numeric: tabular-nums; }
+
+/* The rejection stamp. Rotated and slightly bled, like something pressed onto
+   paper rather than rendered — the page's one piece of theatre, spent here
+   because rejection is the finding. */
+.stamp {
+    border: 1.5px solid var(--reject);
+    color: var(--reject);
+    transform: rotate(-3.5deg);
+    letter-spacing: 0.14em;
+    box-shadow: inset 0 0 0 2px color-mix(in oklch, var(--ground) 60%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
