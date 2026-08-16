@@ -236,3 +236,8 @@ body {
         transition-duration: 0.01ms !important;
     }
 }
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.35; }
+}

@@ -72,3 +72,21 @@ export interface Snapshot {
   research: Research
   market: Market
 }
+
+
+export interface LiveSymbol {
+  symbol: string
+  mid: number
+  spread_bps: number
+  ticks: number
+}
+
+export interface Live {
+  at: string
+  quotes_per_sec: number
+  trades_per_sec: number
+  seconds_behind: number | null
+  median_lag_ms: number | null
+  total_messages: number
+  symbols: LiveSymbol[]
+}
