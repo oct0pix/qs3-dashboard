@@ -86,7 +86,11 @@ export default function App() {
   }, [])
 
   const behind = live?.seconds_behind ?? null
-  const ok = behind !== null && behind < 5 && !down
+  // Ölçüldü: tape kesikli akıyor, on saniyelik bir pencere boş okurken
+  // çevresindeki dakikada 2.346 satır vardı. Beş saniyelik bir eşik bu yüzden
+  // sürekli "gecikmeli" yazardı — olmayan bir arızayı bildiren bir gösterge,
+  // hiç gösterge olmamasından kötüdür.
+  const ok = behind !== null && behind < 120 && !down
   const tone = ok ? "var(--live)" : "var(--reject)"
 
   return (

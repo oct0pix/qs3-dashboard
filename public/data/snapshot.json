@@ -1,0 +1,1433 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-16T17:33:48.906867+00:00",
+  "health": {
+    "running": false,
+    "state": "stale",
+    "uptime_seconds": 5777.734493,
+    "universe_size": 20,
+    "streams": [
+      "trade",
+      "bookTicker"
+    ],
+    "quotes_per_sec": 5.3,
+    "trades_per_sec": 2.2,
+    "total_messages": 46284111,
+    "median_lag_ms": 21861.6,
+    "stale_streams": [
+      "trade:ETHUSDT",
+      "trade:CAPUSDT",
+      "trade:XRPUSDT",
+      "trade:DOGEUSDT",
+      "trade:LTCUSDT",
+      "trade:HYPEUSDT",
+      "trade:AVAXUSDT",
+      "trade:LINKUSDT",
+      "trade:ADAUSDT"
+    ],
+    "recent_gaps": [
+      {
+        "start": "2026-08-16T17:32:28.462929+00:00",
+        "seconds": 52.7,
+        "reason": "websocket reconnect"
+      },
+      {
+        "start": "2026-08-16T17:20:16.034479+00:00",
+        "seconds": 2.0,
+        "reason": "websocket reconnect"
+      },
+      {
+        "start": "2026-08-16T17:10:24.074861+00:00",
+        "seconds": 2.0,
+        "reason": "websocket reconnect"
+      },
+      {
+        "start": "2026-08-16T17:10:05.497149+00:00",
+        "seconds": 3.5,
+        "reason": "websocket reconnect"
+      },
+      {
+        "start": "2026-08-16T16:16:32.345905+00:00",
+        "seconds": 1.8,
+        "reason": "websocket reconnect"
+      },
+      {
+        "start": "2026-08-16T16:10:28.853297+00:00",
+        "seconds": 2.2,
+        "reason": "websocket reconnect"
+      },
+      {
+        "start": "2026-08-16T13:58:07.937000+00:00",
+        "seconds": 0.9,
+        "reason": "write failure: deadlock detected\nDETAIL:  Process 64320 waits for RowExclusiveLo"
+      },
+      {
+        "start": "2026-08-16T13:55:17.510000+00:00",
+        "seconds": 1.0,
+        "reason": "write failure: deadlock detected\nDETAIL:  Process 64320 waits for RowExclusiveLo"
+      },
+      {
+        "start": "2026-08-16T11:50:03.347274+00:00",
+        "seconds": 31.8,
+        "reason": "websocket reconnect"
+      },
+      {
+        "start": "2026-08-16T11:37:38.562877+00:00",
+        "seconds": 1.5,
+        "reason": "websocket reconnect"
+      },
+      {
+        "start": "2026-08-16T11:12:39.457799+00:00",
+        "seconds": 1.6,
+        "reason": "websocket reconnect"
+      },
+      {
+        "start": "2026-08-16T10:01:32.550728+00:00",
+        "seconds": 2.0,
+        "reason": "websocket reconnect"
+      },
+      {
+        "start": "2026-08-16T00:17:13.198000+00:00",
+        "seconds": 1.0,
+        "reason": "write failure:  (139 rows lost)"
+      },
+      {
+        "start": "2026-08-16T00:01:47.329891+00:00",
+        "seconds": 2.0,
+        "reason": "websocket reconnect"
+      },
+      {
+        "start": "2026-08-16T00:00:32.836184+00:00",
+        "seconds": 1.9,
+        "reason": "websocket reconnect"
+      },
+      {
+        "start": "2026-08-15T21:42:35.088918+00:00",
+        "seconds": 1.5,
+        "reason": "websocket reconnect"
+      },
+      {
+        "start": "2026-08-15T21:32:35.623997+00:00",
+        "seconds": 1.9,
+        "reason": "websocket reconnect"
+      }
+    ]
+  },
+  "inventory": {
+    "db_bytes": 6706430479,
+    "tables": [
+      {
+        "name": "book_ticker",
+        "bytes": 2619244544
+      },
+      {
+        "name": "depth_snapshots",
+        "bytes": 24576
+      },
+      {
+        "name": "positioning",
+        "bytes": 25919488
+      },
+      {
+        "name": "rest_bars",
+        "bytes": 3221618688
+      },
+      {
+        "name": "trades",
+        "bytes": 802562048
+      }
+    ],
+    "row_counts": {
+      "trades": 13605203,
+      "book_ticker": 34541825,
+      "rest_bars": 10807930,
+      "funding_rates": 9734,
+      "positioning": 88892
+    },
+    "live_coverage": {
+      "from": "2026-08-15T21:00:00.142752+00:00",
+      "to": "2026-08-16T17:33:50.966452+00:00"
+    },
+    "history": [
+      {
+        "interval": "1h",
+        "symbols": 104,
+        "bars": 2116655,
+        "from": "2021-08-17T15:00:00+00:00",
+        "to": "2026-08-16T14:00:00+00:00"
+      },
+      {
+        "interval": "5m",
+        "symbols": 104,
+        "bars": 9137259,
+        "from": "2025-08-16T11:30:00+00:00",
+        "to": "2026-08-16T12:35:00+00:00"
+      }
+    ],
+    "compression_ratio": 15.2,
+    "archive": {
+      "files": 34,
+      "bytes": 428170289.0,
+      "last_verified": "2026-08-16T17:11:01.302513+00:00"
+    }
+  },
+  "research": {
+    "total_attempts": 74,
+    "experiments": [
+      {
+        "at": "2026-08-16T10:46:34.524079+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 3,
+          "tp": 2.0,
+          "sl": 1.0,
+          "horizon": 30
+        },
+        "n_events": 432,
+        "net_bps": -14.32796223835562,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:00:59.457023+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 2.0,
+          "sl": 1.0,
+          "horizon": 30
+        },
+        "n_events": 504,
+        "net_bps": -14.4036,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:00:59.577379+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 2.0,
+          "sl": 1.0,
+          "horizon": 120
+        },
+        "n_events": 422,
+        "net_bps": -13.0367,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:00:59.707665+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 3.0,
+          "sl": 1.0,
+          "horizon": 30
+        },
+        "n_events": 504,
+        "net_bps": -13.2869,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:00:59.829864+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 3.0,
+          "sl": 1.0,
+          "horizon": 120
+        },
+        "n_events": 422,
+        "net_bps": -8.4255,
+        "cpcv_positive": 0.2,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:00:59.944729+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 3,
+          "tp": 2.0,
+          "sl": 1.0,
+          "horizon": 30
+        },
+        "n_events": 384,
+        "net_bps": -15.8827,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:00.116603+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 3,
+          "tp": 2.0,
+          "sl": 1.0,
+          "horizon": 120
+        },
+        "n_events": 322,
+        "net_bps": -13.8637,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:00.283752+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 3,
+          "tp": 3.0,
+          "sl": 1.0,
+          "horizon": 30
+        },
+        "n_events": 384,
+        "net_bps": -14.7375,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:00.379357+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 3,
+          "tp": 3.0,
+          "sl": 1.0,
+          "horizon": 120
+        },
+        "n_events": 322,
+        "net_bps": -8.9586,
+        "cpcv_positive": 0.1333,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:21.369310+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 2.0,
+          "sl": 1.0,
+          "horizon": 30
+        },
+        "n_events": 506,
+        "net_bps": -14.756,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:21.450848+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 2.0,
+          "sl": 1.0,
+          "horizon": 60
+        },
+        "n_events": 478,
+        "net_bps": -14.9133,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:21.525573+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 2.0,
+          "sl": 1.0,
+          "horizon": 120
+        },
+        "n_events": 422,
+        "net_bps": -13.0366,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:21.629589+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 2.0,
+          "sl": 1.0,
+          "horizon": 240
+        },
+        "n_events": 314,
+        "net_bps": -13.6226,
+        "cpcv_positive": 0.1333,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:21.721110+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 2.0,
+          "sl": 1.0,
+          "horizon": 480
+        },
+        "n_events": 165,
+        "net_bps": -8.2557,
+        "cpcv_positive": 0.2667,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:21.837936+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 3.0,
+          "sl": 1.0,
+          "horizon": 30
+        },
+        "n_events": 506,
+        "net_bps": -13.6438,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:21.903308+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 3.0,
+          "sl": 1.0,
+          "horizon": 60
+        },
+        "n_events": 478,
+        "net_bps": -11.3894,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:21.967407+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 3.0,
+          "sl": 1.0,
+          "horizon": 120
+        },
+        "n_events": 422,
+        "net_bps": -8.4254,
+        "cpcv_positive": 0.2,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:22.046083+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 3.0,
+          "sl": 1.0,
+          "horizon": 240
+        },
+        "n_events": 314,
+        "net_bps": -9.5654,
+        "cpcv_positive": 0.3333,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:22.113759+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 3.0,
+          "sl": 1.0,
+          "horizon": 480
+        },
+        "n_events": 165,
+        "net_bps": 0.0201,
+        "cpcv_positive": 0.3333,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:22.213659+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 5.0,
+          "sl": 1.0,
+          "horizon": 30
+        },
+        "n_events": 506,
+        "net_bps": -12.5721,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:22.286452+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 5.0,
+          "sl": 1.0,
+          "horizon": 60
+        },
+        "n_events": 478,
+        "net_bps": -8.9967,
+        "cpcv_positive": 0.0667,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:22.363898+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 5.0,
+          "sl": 1.0,
+          "horizon": 120
+        },
+        "n_events": 422,
+        "net_bps": -2.6228,
+        "cpcv_positive": 0.3333,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:22.439876+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 5.0,
+          "sl": 1.0,
+          "horizon": 240
+        },
+        "n_events": 314,
+        "net_bps": -8.5254,
+        "cpcv_positive": 0.3333,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:01:22.510872+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 5.0,
+          "sl": 1.0,
+          "horizon": 480
+        },
+        "n_events": 165,
+        "net_bps": 4.4947,
+        "cpcv_positive": 0.4,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:36:41.752032+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 2.0,
+          "sl": 1.0,
+          "horizon": 30
+        },
+        "n_events": 274084,
+        "net_bps": -12.6734,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:37:23.465330+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 2.0,
+          "sl": 1.0,
+          "horizon": 60
+        },
+        "n_events": 273972,
+        "net_bps": -12.5722,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:38:05.526175+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 2.0,
+          "sl": 1.0,
+          "horizon": 120
+        },
+        "n_events": 273740,
+        "net_bps": -12.5086,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:38:45.292768+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 2.0,
+          "sl": 1.0,
+          "horizon": 240
+        },
+        "n_events": 273309,
+        "net_bps": -12.498,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:39:25.124731+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 2.0,
+          "sl": 1.0,
+          "horizon": 480
+        },
+        "n_events": 272438,
+        "net_bps": -12.5494,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:40:06.022179+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 3.0,
+          "sl": 1.0,
+          "horizon": 30
+        },
+        "n_events": 274084,
+        "net_bps": -12.694,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:40:48.640362+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 3.0,
+          "sl": 1.0,
+          "horizon": 60
+        },
+        "n_events": 273972,
+        "net_bps": -12.4344,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:41:30.552974+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 3.0,
+          "sl": 1.0,
+          "horizon": 120
+        },
+        "n_events": 273740,
+        "net_bps": -12.3107,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:42:11.420884+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 3.0,
+          "sl": 1.0,
+          "horizon": 240
+        },
+        "n_events": 273309,
+        "net_bps": -12.2366,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:42:51.927448+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 3.0,
+          "sl": 1.0,
+          "horizon": 480
+        },
+        "n_events": 272438,
+        "net_bps": -12.3112,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:43:35.154998+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 5.0,
+          "sl": 1.0,
+          "horizon": 30
+        },
+        "n_events": 274084,
+        "net_bps": -12.9815,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:44:18.176810+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 5.0,
+          "sl": 1.0,
+          "horizon": 60
+        },
+        "n_events": 273972,
+        "net_bps": -12.576,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:45:01.263071+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 5.0,
+          "sl": 1.0,
+          "horizon": 120
+        },
+        "n_events": 273740,
+        "net_bps": -12.3584,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:45:44.225418+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 5.0,
+          "sl": 1.0,
+          "horizon": 240
+        },
+        "n_events": 273309,
+        "net_bps": -12.1925,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T11:46:28.825451+00:00",
+        "kind": "parametre",
+        "params": {
+          "k": 2,
+          "tp": 5.0,
+          "sl": 1.0,
+          "horizon": 480
+        },
+        "n_events": 272438,
+        "net_bps": -12.553,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:43:45.458786+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "oynaklık",
+          "dilim": "Q1",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118614,
+        "net_bps": -12.261,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:43:47.179074+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "oynaklık",
+          "dilim": "Q2",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118614,
+        "net_bps": -12.41,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:43:48.966340+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "oynaklık",
+          "dilim": "Q3",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118613,
+        "net_bps": -13.262,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:43:50.681659+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "oynaklık",
+          "dilim": "Q4",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118614,
+        "net_bps": -12.929,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:43:52.358045+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "trend",
+          "dilim": "Q1",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118615,
+        "net_bps": -13.397,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:43:54.274778+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "trend",
+          "dilim": "Q2",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118613,
+        "net_bps": -13.055,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:43:55.791125+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "trend",
+          "dilim": "Q3",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118613,
+        "net_bps": -11.982,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:43:57.306658+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "trend",
+          "dilim": "Q4",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118614,
+        "net_bps": -12.427,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:43:59.596263+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "saat",
+          "dilim": "asya 00-08",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 158124,
+        "net_bps": -12.371,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:44:03.200471+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "saat",
+          "dilim": "avrupa 08-16",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 167247,
+        "net_bps": -12.969,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:44:05.908781+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "saat",
+          "dilim": "abd 16-24",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 149084,
+        "net_bps": -12.796,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:44:07.883023+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "hacim_patlaması",
+          "dilim": "Q1",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118614,
+        "net_bps": -12.792,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:44:09.726391+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "hacim_patlaması",
+          "dilim": "Q2",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118614,
+        "net_bps": -12.79,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:44:11.599330+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "hacim_patlaması",
+          "dilim": "Q3",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118613,
+        "net_bps": -12.672,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:44:13.528582+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "hacim_patlaması",
+          "dilim": "Q4",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118614,
+        "net_bps": -12.608,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:44:15.273936+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "süpürme_derinliği",
+          "dilim": "Q1",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118614,
+        "net_bps": -11.401,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:44:16.810808+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "süpürme_derinliği",
+          "dilim": "Q2",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118617,
+        "net_bps": -12.085,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:44:18.421742+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "süpürme_derinliği",
+          "dilim": "Q3",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118610,
+        "net_bps": -13.489,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:44:20.156740+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "süpürme_derinliği",
+          "dilim": "Q4",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118614,
+        "net_bps": -13.887,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:44:22.445804+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "seviye_yaşı",
+          "dilim": "Q1",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 132797,
+        "net_bps": -12.275,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:44:24.269034+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "seviye_yaşı",
+          "dilim": "Q2",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 117453,
+        "net_bps": -13.559,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:44:25.843999+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "seviye_yaşı",
+          "dilim": "Q3",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 105924,
+        "net_bps": -12.948,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:44:27.717473+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "seviye_yaşı",
+          "dilim": "Q4",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 118281,
+        "net_bps": -12.164,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:44:32.764986+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "yön",
+          "dilim": "long",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 246369,
+        "net_bps": -13.646,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T12:44:37.479226+00:00",
+        "kind": "rejim",
+        "params": {
+          "analiz": "rejim",
+          "boyut": "yön",
+          "dilim": "short",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 120
+        },
+        "n_events": 228086,
+        "net_bps": -11.71,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T14:13:51.235265+00:00",
+        "kind": "kategori",
+        "params": {
+          "analiz": "kategori",
+          "interval": "1h",
+          "tp": 3.0,
+          "sl": 1.0,
+          "ufuk": 24
+        },
+        "n_events": 96536,
+        "net_bps": null,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T14:47:47.375153+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "momentum",
+          "lookback": 24,
+          "horizon": 24,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 216,
+        "net_bps": -18.78,
+        "cpcv_positive": 0.133,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T14:47:47.979950+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "ters",
+          "lookback": 24,
+          "horizon": 24,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 216,
+        "net_bps": 0.732,
+        "cpcv_positive": 0.467,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T14:47:48.673806+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "momentum",
+          "lookback": 72,
+          "horizon": 24,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 216,
+        "net_bps": -1.957,
+        "cpcv_positive": 0.467,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T14:47:49.251319+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "ters",
+          "lookback": 72,
+          "horizon": 24,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 216,
+        "net_bps": -8.963,
+        "cpcv_positive": 0.333,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T14:47:49.912477+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "momentum",
+          "lookback": 168,
+          "horizon": 24,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 216,
+        "net_bps": 1.452,
+        "cpcv_positive": 0.6,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T14:47:50.574181+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "ters",
+          "lookback": 168,
+          "horizon": 24,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 216,
+        "net_bps": -8.848,
+        "cpcv_positive": 0.4,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T14:47:50.803461+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "momentum",
+          "lookback": 168,
+          "horizon": 72,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 73,
+        "net_bps": 37.441,
+        "cpcv_positive": 0.8,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T14:47:50.995964+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "ters",
+          "lookback": 168,
+          "horizon": 72,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 73,
+        "net_bps": -50.041,
+        "cpcv_positive": 0.2,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-16T14:47:51.554333+00:00",
+        "kind": "çapraz kesit-holdout",
+        "params": {
+          "analiz": "çapraz kesit-holdout",
+          "yön": "momentum",
+          "lookback": 168,
+          "horizon": 72
+        },
+        "n_events": null,
+        "net_bps": null,
+        "cpcv_positive": null,
+        "dsr": 0.0
+      }
+    ],
+    "passing": 1,
+    "note": "Deneme sayacı kümülatiftir ve Deflated Sharpe Ratio'nun girdisidir. Denemeler arttıkça anlamlılık eşiği yükselir — tasarım gereği."
+  },
+  "market": {
+    "cost_model": {
+      "taker_bps": 5.0,
+      "slippage_bps": 0.5,
+      "fixed_round_trip_bps": 11.0
+    },
+    "symbols": [
+      {
+        "symbol": "BTCUSDT",
+        "spread_bps": 0.0169,
+        "round_trip_bps": 11.02,
+        "ticks_30m": 116571,
+        "funding_annual_pct": 2.14
+      },
+      {
+        "symbol": "ETHUSDT",
+        "spread_bps": 0.0556,
+        "round_trip_bps": 11.06,
+        "ticks_30m": 115446,
+        "funding_annual_pct": 1.42
+      },
+      {
+        "symbol": "BNBUSDT",
+        "spread_bps": 0.1788,
+        "round_trip_bps": 11.18,
+        "ticks_30m": 29856,
+        "funding_annual_pct": 2.9
+      },
+      {
+        "symbol": "HYPEUSDT",
+        "spread_bps": 0.2069,
+        "round_trip_bps": 11.21,
+        "ticks_30m": 67760,
+        "funding_annual_pct": 2.66
+      },
+      {
+        "symbol": "ZECUSDT",
+        "spread_bps": 0.2276,
+        "round_trip_bps": 11.23,
+        "ticks_30m": 42934,
+        "funding_annual_pct": -3.09
+      },
+      {
+        "symbol": "XMRUSDT",
+        "spread_bps": 0.289,
+        "round_trip_bps": 11.29,
+        "ticks_30m": 17236,
+        "funding_annual_pct": 14.05
+      },
+      {
+        "symbol": "XRPUSDT",
+        "spread_bps": 1.0006,
+        "round_trip_bps": 12.0,
+        "ticks_30m": 80479,
+        "funding_annual_pct": -0.67
+      },
+      {
+        "symbol": "LINKUSDT",
+        "spread_bps": 1.1406,
+        "round_trip_bps": 12.14,
+        "ticks_30m": 49543,
+        "funding_annual_pct": 4.4
+      },
+      {
+        "symbol": "SOLUSDT",
+        "spread_bps": 1.3262,
+        "round_trip_bps": 12.33,
+        "ticks_30m": 97880,
+        "funding_annual_pct": -1.07
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "spread_bps": 1.4298,
+        "round_trip_bps": 12.43,
+        "ticks_30m": 31965,
+        "funding_annual_pct": 2.82
+      },
+      {
+        "symbol": "AVAXUSDT",
+        "spread_bps": 1.5956,
+        "round_trip_bps": 12.6,
+        "ticks_30m": 14689,
+        "funding_annual_pct": 1.49
+      },
+      {
+        "symbol": "BTWUSDT",
+        "spread_bps": 1.8394,
+        "round_trip_bps": 12.84,
+        "ticks_30m": 81055,
+        "funding_annual_pct": 43.99
+      },
+      {
+        "symbol": "ACEUSDT",
+        "spread_bps": 2.0406,
+        "round_trip_bps": 13.04,
+        "ticks_30m": 48648,
+        "funding_annual_pct": -68.93
+      },
+      {
+        "symbol": "LTCUSDT",
+        "spread_bps": 2.2489,
+        "round_trip_bps": 13.25,
+        "ticks_30m": 61760,
+        "funding_annual_pct": 2.27
+      },
+      {
+        "symbol": "AKEUSDT",
+        "spread_bps": 2.6919,
+        "round_trip_bps": 13.69,
+        "ticks_30m": 151173,
+        "funding_annual_pct": 11.34
+      },
+      {
+        "symbol": "HUSDT",
+        "spread_bps": 2.8915,
+        "round_trip_bps": 13.89,
+        "ticks_30m": 165390,
+        "funding_annual_pct": -125.0
+      },
+      {
+        "symbol": "CAPUSDT",
+        "spread_bps": 2.9451,
+        "round_trip_bps": 13.95,
+        "ticks_30m": 47102,
+        "funding_annual_pct": -12.8
+      },
+      {
+        "symbol": "HEMIUSDT",
+        "spread_bps": 2.9782,
+        "round_trip_bps": 13.98,
+        "ticks_30m": 64873,
+        "funding_annual_pct": 3.72
+      },
+      {
+        "symbol": "VELVETUSDT",
+        "spread_bps": 3.2969,
+        "round_trip_bps": 14.3,
+        "ticks_30m": 83342,
+        "funding_annual_pct": 11.91
+      },
+      {
+        "symbol": "ADAUSDT",
+        "spread_bps": 5.668,
+        "round_trip_bps": 16.67,
+        "ticks_30m": 33364,
+        "funding_annual_pct": 0.27
+      }
+    ]
+  }
+}
