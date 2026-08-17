@@ -1,11 +1,14 @@
 import { useEffect, useRef, useState } from "react"
 import { Spark } from "@/components/Spark"
+import { Tape, type Series } from "@/components/Tape"
+import { Attempts } from "@/components/Attempts"
 import { fetchLive, fetchSnapshot, resetEndpoint } from "@/lib/api"
+import { NAME, STAGE, VERSION } from "@/lib/version"
 import type { Live, Snapshot } from "@/lib/types"
 
 const LIVE_MS = 1000
 const SNAP_MS = 60_000
-const HISTORY = 90
+const HISTORY = 240 // dört dakikalık iz
 
 function num(n: number, d = 0) {
   return n.toLocaleString("tr-TR", {
@@ -46,11 +49,23 @@ function Cell({
   )
 }
 
+function Rule({ children }: { children: string }) {
+  return (
+    <div className="mt-9 border-t border-rule pt-3 font-mono text-[0.58rem] uppercase tracking-[0.18em] text-muted-foreground">
+      {children}
+    </div>
+  )
+}
+
 export default function App() {
   const [live, setLive] = useState<Live | null>(null)
   const [snap, setSnap] = useState<Snapshot | null>(null)
   const [down, setDown] = useState<string | null>(null)
-  const history = useRef<number[]>([])
+  const rate = useRef<number[]>([])
+  // Symbol → mid history. A ref, not state: it is appended to every second and
+  // making it state would cost a second render per tick for nothing — the
+  // `live` update already drives the frame.
+  const tape = useRef<Map<string, number[]>>(new Map())
 
   useEffect(() => {
     let alive = true
@@ -59,7 +74,17 @@ export default function App() {
       try {
         const l = await fetchLive()
         if (!alive) return
-        history.current = [...history.current, l.quotes_per_sec].slice(-HISTORY)
+        rate.current = [...rate.current, l.quotes_per_sec].slice(-90)
+        const seen = new Set<string>()
+        for (const s of l.symbols) {
+          seen.add(s.symbol)
+          const prev = tape.current.get(s.symbol) ?? []
+          tape.current.set(s.symbol, [...prev, s.mid].slice(-HISTORY))
+        }
+        // A symbol that drops out of the active list stops being drawn rather
+        // than freezing at its last price, which would read as a flat market
+        // instead of an absent one.
+        for (const k of tape.current.keys()) if (!seen.has(k)) tape.current.delete(k)
         setLive(l)
         setDown(null)
       } catch (e) {
@@ -93,6 +118,14 @@ export default function App() {
   const ok = behind !== null && behind < 120 && !down
   const tone = ok ? "var(--live)" : "var(--reject)"
 
+  const series: Series[] = live
+    ? live.symbols
+        .map((s) => ({ symbol: s.symbol, values: tape.current.get(s.symbol) ?? [] }))
+        .filter((s) => s.values.length >= 2)
+        .slice(0, 8)
+    : []
+  const watched = Math.max(0, ...series.map((s) => s.values.length))
+
   return (
     <div className="min-h-dvh bg-background text-foreground">
       <div className="mx-auto max-w-5xl px-4 py-6 sm:px-6 sm:py-8">
@@ -106,12 +139,15 @@ export default function App() {
               animation: ok ? "pulse 2s ease-in-out infinite" : undefined,
             }}
           />
-          <span className="font-display text-lg">System 3.0</span>
-          <span className="font-mono text-[0.65rem] uppercase tracking-[0.16em] text-muted-foreground">
-            {down ? "bağlanılamıyor" : ok ? "canlı" : "gecikmeli"}
+          <span className="font-display text-lg">{NAME}</span>
+          <span className="font-mono text-[0.6rem] uppercase tracking-[0.16em] text-muted-foreground">
+            {STAGE} {VERSION}
           </span>
-          <span className="ml-auto font-mono tabular text-[0.65rem] text-muted-foreground">
-            {behind !== null ? `${num(behind, 1)} sn geride` : "—"}
+          <span className="ml-auto flex items-baseline gap-3 font-mono tabular text-[0.65rem] text-muted-foreground">
+            <span style={{ color: tone }}>
+              {down ? "bağlanılamıyor" : ok ? "canlı" : "gecikmeli"}
+            </span>
+            <span>{behind !== null ? `${num(behind, 1)} sn` : "—"}</span>
           </span>
         </div>
 
@@ -125,7 +161,7 @@ export default function App() {
               tone={tone}
             />
             <div className="mt-2">
-              <Spark values={history.current} stroke={tone} />
+              <Spark values={rate.current} stroke={tone} />
             </div>
           </div>
           <Cell label="İşlem" value={live ? num(live.trades_per_sec) : "—"} unit="/sn" />
@@ -134,14 +170,16 @@ export default function App() {
             value={live?.median_lag_ms ? num(live.median_lag_ms) : "—"}
             unit="ms"
           />
-          <Cell
-            label="Mesaj"
-            value={live ? num(live.total_messages) : "—"}
-          />
+          <Cell label="Mesaj" value={live ? num(live.total_messages) : "—"} />
+        </div>
+
+        {/* the tape itself */}
+        <div className="mt-7">
+          <Tape series={series} seconds={watched} />
         </div>
 
         {/* live book */}
-        <div className="mt-8 overflow-x-auto">
+        <div className="mt-5 overflow-x-auto">
           <table className="w-full border-collapse text-left">
             <thead>
               <tr className="border-b border-rule">
@@ -174,7 +212,8 @@ export default function App() {
         {/* slow half */}
         {snap && (
           <>
-            <div className="mt-9 grid grid-cols-2 gap-x-5 gap-y-6 border-t border-rule pt-6 sm:grid-cols-4">
+            <Rule>Denenen</Rule>
+            <div className="mt-4 grid grid-cols-2 gap-x-5 gap-y-6 sm:grid-cols-4">
               <Cell label="Deneme" value={num(snap.research.total_attempts)} />
               <Cell
                 label="Elenen"
@@ -188,47 +227,8 @@ export default function App() {
               />
             </div>
 
-            <div className="mt-8 overflow-x-auto">
-              <table className="w-full border-collapse text-left">
-                <thead>
-                  <tr className="border-b border-rule">
-                    {["Denenen", "Net", "Poz.", ""].map((h, i) => (
-                      <th key={i} className={`pb-1.5 font-mono text-[0.58rem] uppercase tracking-[0.14em] font-normal text-muted-foreground ${i ? "text-right" : ""}`}>
-                        {h}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {[...snap.research.experiments].reverse().slice(0, 12).map((e, i) => {
-                    const bad = (e.net_bps ?? -1) <= 0 || (e.cpcv_positive ?? 0) < 0.7
-                    const p = e.params ?? {}
-                    const desc = [p["yön"], p["boyut"] && `${p["boyut"]}·${p["dilim"] ?? ""}`,
-                                  p["lookback"] && `b${p["lookback"]}`,
-                                  (p["horizon"] ?? p["ufuk"]) && `t${p["horizon"] ?? p["ufuk"]}`]
-                      .filter(Boolean).join(" ") || e.kind
-                    return (
-                      <tr key={i} className="border-b border-rule/50 last:border-0">
-                        <td className="py-1.5 font-mono text-[0.74rem]">{desc}</td>
-                        <td className="py-1.5 text-right font-mono tabular text-[0.74rem]"
-                            style={bad ? { color: "var(--reject)" } : undefined}>
-                          {e.net_bps === null ? "—" : num(e.net_bps, 1)}
-                        </td>
-                        <td className="py-1.5 text-right font-mono tabular text-[0.74rem] text-muted-foreground">
-                          {e.cpcv_positive === null ? "—" : `%${num(e.cpcv_positive * 100)}`}
-                        </td>
-                        <td className="py-1.5 pl-2 text-right">
-                          {bad && (
-                            <span className="stamp inline-block px-1 py-px font-mono text-[0.52rem] uppercase">
-                              elendi
-                            </span>
-                          )}
-                        </td>
-                      </tr>
-                    )
-                  })}
-                </tbody>
-              </table>
+            <div className="mt-6">
+              <Attempts experiments={snap.research.experiments} />
             </div>
           </>
         )}

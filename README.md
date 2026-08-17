@@ -1,4 +1,4 @@
-# System 3.0 — araştırma kaydı
+# Bonjuuk BETA — araştırma kaydı
 
 Kripto vadeli işlemler araştırma sisteminin salt-okunur gözlem panosu.
 
