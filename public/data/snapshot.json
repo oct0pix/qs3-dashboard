@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-17T09:46:52.142216+00:00",
+  "generated_at": "2026-08-17T10:02:14.328572+00:00",
   "health": {
     "running": true,
     "state": "running",
-    "uptime_seconds": 56390.00131,
+    "uptime_seconds": 57312.187666,
     "universe_size": 20,
     "streams": [
       "trade",
       "bookTicker"
     ],
-    "quotes_per_sec": 816.1,
-    "trades_per_sec": 404.5,
-    "total_messages": 126433815,
-    "median_lag_ms": 143.8,
+    "quotes_per_sec": 907.6,
+    "trades_per_sec": 496.3,
+    "total_messages": 127566606,
+    "median_lag_ms": 142.2,
     "stale_streams": [],
     "recent_gaps": [
       {
@@ -119,11 +119,11 @@
     ]
   },
   "inventory": {
-    "db_bytes": 6968048663,
+    "db_bytes": 7233569295,
     "tables": [
       {
         "name": "book_ticker",
-        "bytes": 4533649408
+        "bytes": 4723949568
       },
       {
         "name": "depth_snapshots",
@@ -139,19 +139,19 @@
       },
       {
         "name": "trades",
-        "bytes": 1546928128
+        "bytes": 1619640320
       }
     ],
     "row_counts": {
-      "trades": 34983241,
-      "book_ticker": 92469121,
+      "trades": 35574841,
+      "book_ticker": 93280731,
       "rest_bars": 10233094,
       "funding_rates": 350557,
       "positioning": 89444
     },
     "live_coverage": {
       "from": "2026-08-15T21:00:00.142752+00:00",
-      "to": "2026-08-17T09:47:01.931982+00:00"
+      "to": "2026-08-17T10:02:26.467380+00:00"
     },
     "history": [
       {
@@ -177,7 +177,7 @@
     }
   },
   "research": {
-    "total_attempts": 140,
+    "total_attempts": 174,
     "experiments": [
       {
         "at": "2026-08-16T10:46:34.524079+00:00",
@@ -2186,6 +2186,447 @@
         "net_bps": 126.4,
         "cpcv_positive": null,
         "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:13.074607+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "ters",
+          "horizon": 8
+        },
+        "n_events": 1116,
+        "net_bps": 32.4,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:13.167285+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "devam",
+          "horizon": 8
+        },
+        "n_events": 1116,
+        "net_bps": -57.6,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:13.241971+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "ters",
+          "horizon": 24
+        },
+        "n_events": 775,
+        "net_bps": 68.0,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:13.323820+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "devam",
+          "horizon": 24
+        },
+        "n_events": 775,
+        "net_bps": -93.2,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:13.397885+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "ters",
+          "horizon": 72
+        },
+        "n_events": 547,
+        "net_bps": 181.9,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:13.471902+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "devam",
+          "horizon": 72
+        },
+        "n_events": 547,
+        "net_bps": -207.1,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:13.543584+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "ters",
+          "horizon": 168
+        },
+        "n_events": 429,
+        "net_bps": 271.8,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:13.608635+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "devam",
+          "horizon": 168
+        },
+        "n_events": 429,
+        "net_bps": -297.0,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:13.670417+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "ters",
+          "horizon": 8
+        },
+        "n_events": 165,
+        "net_bps": 160.6,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:13.727684+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "devam",
+          "horizon": 8
+        },
+        "n_events": 165,
+        "net_bps": -185.8,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:13.774858+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "ters",
+          "horizon": 24
+        },
+        "n_events": 134,
+        "net_bps": 8.8,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:13.829954+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "devam",
+          "horizon": 24
+        },
+        "n_events": 134,
+        "net_bps": -34.0,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:13.889025+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "ters",
+          "horizon": 72
+        },
+        "n_events": 107,
+        "net_bps": -118.1,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:13.943973+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "devam",
+          "horizon": 72
+        },
+        "n_events": 107,
+        "net_bps": 92.9,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:13.999004+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "ters",
+          "horizon": 168
+        },
+        "n_events": 85,
+        "net_bps": -649.2,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:14.056452+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "devam",
+          "horizon": 168
+        },
+        "n_events": 85,
+        "net_bps": 624.0,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:14.315364+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "ters",
+          "horizon": 8
+        },
+        "n_events": 6179,
+        "net_bps": 11.8,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:14.555969+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "devam",
+          "horizon": 8
+        },
+        "n_events": 6179,
+        "net_bps": -37.0,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:14.754976+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "ters",
+          "horizon": 24
+        },
+        "n_events": 4128,
+        "net_bps": 30.2,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:14.968113+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "devam",
+          "horizon": 24
+        },
+        "n_events": 4128,
+        "net_bps": -55.4,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:15.110707+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "ters",
+          "horizon": 72
+        },
+        "n_events": 2578,
+        "net_bps": 85.2,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:15.266635+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "devam",
+          "horizon": 72
+        },
+        "n_events": 2578,
+        "net_bps": -110.4,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:15.393091+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "ters",
+          "horizon": 168
+        },
+        "n_events": 1737,
+        "net_bps": 138.9,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:15.510809+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "devam",
+          "horizon": 168
+        },
+        "n_events": 1737,
+        "net_bps": -164.1,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:15.684012+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "ters",
+          "horizon": 8
+        },
+        "n_events": 3565,
+        "net_bps": -1.3,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:15.855787+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "devam",
+          "horizon": 8
+        },
+        "n_events": 3565,
+        "net_bps": -23.9,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:15.971623+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "ters",
+          "horizon": 24
+        },
+        "n_events": 2254,
+        "net_bps": -14.2,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:16.090429+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "devam",
+          "horizon": 24
+        },
+        "n_events": 2254,
+        "net_bps": -11.0,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:16.182424+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "ters",
+          "horizon": 72
+        },
+        "n_events": 1254,
+        "net_bps": -72.4,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:16.272254+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "devam",
+          "horizon": 72
+        },
+        "n_events": 1254,
+        "net_bps": 47.2,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:16.347685+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "ters",
+          "horizon": 168
+        },
+        "n_events": 781,
+        "net_bps": -292.5,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:16.425315+00:00",
+        "kind": "funding olayı",
+        "params": {
+          "analiz": "funding olayı",
+          "yön": "devam",
+          "horizon": 168
+        },
+        "n_events": 781,
+        "net_bps": 267.3,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:49:16.427673+00:00",
+        "kind": "funding olayı-holdout",
+        "params": {
+          "analiz": "funding olayı-holdout",
+          "horizon": 72
+        },
+        "n_events": 1458,
+        "net_bps": 93.4,
+        "cpcv_positive": null,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T09:51:48.616658+00:00",
+        "kind": "funding olayı-permütasyon",
+        "params": {
+          "analiz": "funding olayı-permütasyon",
+          "horizon": 72,
+          "yön": "ters"
+        },
+        "n_events": null,
+        "net_bps": null,
+        "cpcv_positive": null,
+        "dsr": null
       }
     ],
     "passing": 6,
@@ -2200,142 +2641,142 @@
     "symbols": [
       {
         "symbol": "BTCUSDT",
-        "spread_bps": 0.0176,
+        "spread_bps": 0.0169,
         "round_trip_bps": 11.02,
-        "ticks_30m": 178808,
+        "ticks_30m": 139321,
         "funding_annual_pct": 10.86
       },
       {
         "symbol": "ETHUSDT",
-        "spread_bps": 0.0545,
+        "spread_bps": 0.0536,
         "round_trip_bps": 11.05,
-        "ticks_30m": 168112,
+        "ticks_30m": 124981,
         "funding_annual_pct": 11.59
       },
       {
         "symbol": "BNBUSDT",
-        "spread_bps": 0.1749,
+        "spread_bps": 0.1719,
         "round_trip_bps": 11.17,
-        "ticks_30m": 29154,
+        "ticks_30m": 28527,
         "funding_annual_pct": -0.55
       },
       {
         "symbol": "HYPEUSDT",
-        "spread_bps": 0.1861,
-        "round_trip_bps": 11.19,
-        "ticks_30m": 61721,
+        "spread_bps": 0.1829,
+        "round_trip_bps": 11.18,
+        "ticks_30m": 64293,
         "funding_annual_pct": 4.27
       },
       {
         "symbol": "ZECUSDT",
-        "spread_bps": 0.2369,
+        "spread_bps": 0.2351,
         "round_trip_bps": 11.24,
-        "ticks_30m": 75552,
+        "ticks_30m": 60273,
         "funding_annual_pct": 8.41
       },
       {
         "symbol": "XMRUSDT",
-        "spread_bps": 0.3463,
-        "round_trip_bps": 11.35,
-        "ticks_30m": 17318,
+        "spread_bps": 0.3741,
+        "round_trip_bps": 11.37,
+        "ticks_30m": 21956,
         "funding_annual_pct": 13.05
       },
       {
         "symbol": "XRPUSDT",
-        "spread_bps": 1.0052,
-        "round_trip_bps": 12.01,
-        "ticks_30m": 53920,
+        "spread_bps": 1.0049,
+        "round_trip_bps": 12.0,
+        "ticks_30m": 50802,
         "funding_annual_pct": 13.03
       },
       {
         "symbol": "LINKUSDT",
-        "spread_bps": 1.0776,
+        "spread_bps": 1.0769,
         "round_trip_bps": 12.08,
-        "ticks_30m": 18849,
+        "ticks_30m": 17746,
         "funding_annual_pct": 14.28
       },
       {
         "symbol": "SOLUSDT",
-        "spread_bps": 1.3282,
+        "spread_bps": 1.3288,
         "round_trip_bps": 12.33,
-        "ticks_30m": 65557,
+        "ticks_30m": 57139,
         "funding_annual_pct": 0.8
       },
       {
         "symbol": "DOGEUSDT",
-        "spread_bps": 1.4265,
-        "round_trip_bps": 12.43,
-        "ticks_30m": 43646,
+        "spread_bps": 1.4245,
+        "round_trip_bps": 12.42,
+        "ticks_30m": 46099,
         "funding_annual_pct": 12.73
       },
       {
         "symbol": "AVAXUSDT",
-        "spread_bps": 1.5924,
+        "spread_bps": 1.5917,
         "round_trip_bps": 12.59,
-        "ticks_30m": 13838,
+        "ticks_30m": 12466,
         "funding_annual_pct": 7.83
       },
       {
         "symbol": "LTCUSDT",
-        "spread_bps": 2.2893,
-        "round_trip_bps": 13.29,
-        "ticks_30m": 24899,
+        "spread_bps": 2.2841,
+        "round_trip_bps": 13.28,
+        "ticks_30m": 24140,
         "funding_annual_pct": 13.08
       },
       {
         "symbol": "ACEUSDT",
-        "spread_bps": 2.4572,
-        "round_trip_bps": 13.46,
-        "ticks_30m": 262508,
+        "spread_bps": 2.4219,
+        "round_trip_bps": 13.42,
+        "ticks_30m": 241686,
         "funding_annual_pct": -7.32
       },
       {
         "symbol": "BTWUSDT",
-        "spread_bps": 2.6502,
-        "round_trip_bps": 13.65,
-        "ticks_30m": 116397,
+        "spread_bps": 2.4314,
+        "round_trip_bps": 13.43,
+        "ticks_30m": 100356,
         "funding_annual_pct": 44.99
       },
       {
         "symbol": "HUSDT",
-        "spread_bps": 2.8074,
-        "round_trip_bps": 13.81,
-        "ticks_30m": 81124,
+        "spread_bps": 2.7787,
+        "round_trip_bps": 13.78,
+        "ticks_30m": 87123,
         "funding_annual_pct": -42.07
       },
       {
         "symbol": "AKEUSDT",
-        "spread_bps": 2.8714,
-        "round_trip_bps": 13.87,
-        "ticks_30m": 135382,
+        "spread_bps": 2.9562,
+        "round_trip_bps": 13.96,
+        "ticks_30m": 126659,
         "funding_annual_pct": 20.23
       },
       {
-        "symbol": "VELVETUSDT",
-        "spread_bps": 3.22,
-        "round_trip_bps": 14.22,
-        "ticks_30m": 108888,
-        "funding_annual_pct": 13.8
-      },
-      {
         "symbol": "HEMIUSDT",
-        "spread_bps": 3.2427,
-        "round_trip_bps": 14.24,
-        "ticks_30m": 64112,
+        "spread_bps": 3.2286,
+        "round_trip_bps": 14.23,
+        "ticks_30m": 48158,
         "funding_annual_pct": -1.73
       },
       {
+        "symbol": "VELVETUSDT",
+        "spread_bps": 3.5265,
+        "round_trip_bps": 14.53,
+        "ticks_30m": 95656,
+        "funding_annual_pct": 13.8
+      },
+      {
         "symbol": "CAPUSDT",
-        "spread_bps": 3.5466,
-        "round_trip_bps": 14.55,
-        "ticks_30m": 146497,
+        "spread_bps": 4.0361,
+        "round_trip_bps": 15.04,
+        "ticks_30m": 223202,
         "funding_annual_pct": -13.4
       },
       {
         "symbol": "ADAUSDT",
-        "spread_bps": 5.7262,
-        "round_trip_bps": 16.73,
-        "ticks_30m": 40370,
+        "spread_bps": 5.7355,
+        "round_trip_bps": 16.74,
+        "ticks_30m": 35417,
         "funding_annual_pct": 11.47
       }
     ]
