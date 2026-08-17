@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-17T02:25:32.155117+00:00",
+  "generated_at": "2026-08-17T02:40:49.840960+00:00",
   "health": {
     "running": true,
     "state": "running",
-    "uptime_seconds": 29910.014215,
+    "uptime_seconds": 30827.70006,
     "universe_size": 20,
     "streams": [
       "trade",
       "bookTicker"
     ],
-    "quotes_per_sec": 1250.6,
-    "trades_per_sec": 423.4,
-    "total_messages": 86497062,
-    "median_lag_ms": 142.3,
+    "quotes_per_sec": 917.5,
+    "trades_per_sec": 364.2,
+    "total_messages": 88042399,
+    "median_lag_ms": 143.3,
     "stale_streams": [],
     "recent_gaps": [
       {
@@ -119,11 +119,11 @@
     ]
   },
   "inventory": {
-    "db_bytes": 5304459791,
+    "db_bytes": 5659189775,
     "tables": [
       {
         "name": "book_ticker",
-        "bytes": 3514556416
+        "bytes": 3781419008
       },
       {
         "name": "depth_snapshots",
@@ -139,19 +139,19 @@
       },
       {
         "name": "trades",
-        "bytes": 958930944
+        "bytes": 1043709952
       }
     ],
     "row_counts": {
-      "trades": 23210892,
-      "book_ticker": 64707498,
+      "trades": 23554653,
+      "book_ticker": 65818085,
       "rest_bars": 10233094,
       "funding_rates": 9734,
       "positioning": 90380
     },
     "live_coverage": {
       "from": "2026-08-15T21:00:00.142752+00:00",
-      "to": "2026-08-17T02:25:36.738210+00:00"
+      "to": "2026-08-17T02:40:53.525509+00:00"
     },
     "history": [
       {
@@ -177,7 +177,7 @@
     }
   },
   "research": {
-    "total_attempts": 74,
+    "total_attempts": 89,
     "experiments": [
       {
         "at": "2026-08-16T10:46:34.524079+00:00",
@@ -1281,9 +1281,247 @@
         "net_bps": null,
         "cpcv_positive": null,
         "dsr": 0.0
+      },
+      {
+        "at": "2026-08-17T02:34:10.427760+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "momentum",
+          "lookback": 24,
+          "horizon": 24,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 1077,
+        "net_bps": -3.888,
+        "cpcv_positive": 0.267,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T02:34:12.641037+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "ters",
+          "lookback": 24,
+          "horizon": 24,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 1077,
+        "net_bps": -11.983,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T02:34:14.834694+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "momentum",
+          "lookback": 72,
+          "horizon": 24,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 1077,
+        "net_bps": -0.431,
+        "cpcv_positive": 0.333,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T02:34:17.128830+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "ters",
+          "lookback": 72,
+          "horizon": 24,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 1077,
+        "net_bps": -8.664,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T02:34:19.515302+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "momentum",
+          "lookback": 168,
+          "horizon": 24,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 1077,
+        "net_bps": 4.111,
+        "cpcv_positive": 0.933,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T02:34:21.911693+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "ters",
+          "lookback": 168,
+          "horizon": 24,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 1077,
+        "net_bps": -10.114,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T02:34:22.735094+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "momentum",
+          "lookback": 168,
+          "horizon": 72,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 360,
+        "net_bps": 14.822,
+        "cpcv_positive": 0.8,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T02:34:23.581738+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "ters",
+          "lookback": 168,
+          "horizon": 72,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 360,
+        "net_bps": -25.487,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T02:34:23.936399+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "momentum",
+          "lookback": 168,
+          "horizon": 168,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 155,
+        "net_bps": 14.3,
+        "cpcv_positive": 0.933,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T02:34:24.289602+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "ters",
+          "lookback": 168,
+          "horizon": 168,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 155,
+        "net_bps": -30.615,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T02:34:24.639799+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "momentum",
+          "lookback": 336,
+          "horizon": 168,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 154,
+        "net_bps": 41.891,
+        "cpcv_positive": 0.867,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T02:34:24.979421+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "ters",
+          "lookback": 336,
+          "horizon": 168,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 154,
+        "net_bps": -53.55,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T02:34:25.313686+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "momentum",
+          "lookback": 720,
+          "horizon": 168,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 148,
+        "net_bps": 71.791,
+        "cpcv_positive": 0.933,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T02:34:25.660654+00:00",
+        "kind": "çapraz kesit",
+        "params": {
+          "analiz": "çapraz kesit",
+          "yön": "ters",
+          "lookback": 720,
+          "horizon": 168,
+          "n_side": 10,
+          "interval": "1h"
+        },
+        "n_events": 148,
+        "net_bps": -79.947,
+        "cpcv_positive": 0.0,
+        "dsr": null
+      },
+      {
+        "at": "2026-08-17T02:34:25.854026+00:00",
+        "kind": "çapraz kesit-holdout",
+        "params": {
+          "analiz": "çapraz kesit-holdout",
+          "yön": "momentum",
+          "lookback": 720,
+          "horizon": 168
+        },
+        "n_events": null,
+        "net_bps": null,
+        "cpcv_positive": null,
+        "dsr": 0.0
       }
     ],
-    "passing": 1,
+    "passing": 6,
     "note": "Deneme sayacı kümülatiftir ve Deflated Sharpe Ratio'nun girdisidir. Denemeler arttıkça anlamlılık eşiği yükselir — tasarım gereği."
   },
   "market": {
@@ -1295,142 +1533,142 @@
     "symbols": [
       {
         "symbol": "BTCUSDT",
-        "spread_bps": 0.0168,
-        "round_trip_bps": 11.02,
-        "ticks_30m": 318176,
+        "spread_bps": 0.0262,
+        "round_trip_bps": 11.03,
+        "ticks_30m": 392117,
         "funding_annual_pct": 2.15
       },
       {
         "symbol": "ETHUSDT",
-        "spread_bps": 0.0548,
-        "round_trip_bps": 11.05,
-        "ticks_30m": 289350,
+        "spread_bps": 0.0553,
+        "round_trip_bps": 11.06,
+        "ticks_30m": 323728,
         "funding_annual_pct": 1.42
       },
       {
         "symbol": "BNBUSDT",
-        "spread_bps": 0.177,
-        "round_trip_bps": 11.18,
-        "ticks_30m": 44533,
+        "spread_bps": 0.1745,
+        "round_trip_bps": 11.17,
+        "ticks_30m": 46728,
         "funding_annual_pct": 2.9
       },
       {
         "symbol": "HYPEUSDT",
-        "spread_bps": 0.2385,
+        "spread_bps": 0.2355,
         "round_trip_bps": 11.24,
-        "ticks_30m": 98073,
+        "ticks_30m": 95895,
         "funding_annual_pct": 2.66
       },
       {
         "symbol": "ZECUSDT",
-        "spread_bps": 0.2394,
-        "round_trip_bps": 11.24,
-        "ticks_30m": 53708,
+        "spread_bps": 0.2476,
+        "round_trip_bps": 11.25,
+        "ticks_30m": 63036,
         "funding_annual_pct": -3.07
       },
       {
         "symbol": "XMRUSDT",
-        "spread_bps": 0.3954,
-        "round_trip_bps": 11.4,
-        "ticks_30m": 13693,
+        "spread_bps": 0.373,
+        "round_trip_bps": 11.37,
+        "ticks_30m": 12173,
         "funding_annual_pct": 14.08
       },
       {
         "symbol": "XRPUSDT",
-        "spread_bps": 1.0032,
+        "spread_bps": 1.0042,
         "round_trip_bps": 12.0,
-        "ticks_30m": 66234,
+        "ticks_30m": 81004,
         "funding_annual_pct": -0.69
       },
       {
         "symbol": "LINKUSDT",
-        "spread_bps": 1.0909,
-        "round_trip_bps": 12.09,
-        "ticks_30m": 31373,
+        "spread_bps": 1.102,
+        "round_trip_bps": 12.1,
+        "ticks_30m": 33932,
         "funding_annual_pct": 4.41
       },
       {
         "symbol": "SOLUSDT",
-        "spread_bps": 1.3327,
+        "spread_bps": 1.334,
         "round_trip_bps": 12.33,
-        "ticks_30m": 93498,
+        "ticks_30m": 115973,
         "funding_annual_pct": -1.08
       },
       {
         "symbol": "DOGEUSDT",
-        "spread_bps": 1.4345,
-        "round_trip_bps": 12.43,
-        "ticks_30m": 51450,
+        "spread_bps": 1.4383,
+        "round_trip_bps": 12.44,
+        "ticks_30m": 56084,
         "funding_annual_pct": 2.81
       },
       {
         "symbol": "AVAXUSDT",
-        "spread_bps": 1.6031,
-        "round_trip_bps": 12.6,
-        "ticks_30m": 17583,
+        "spread_bps": 1.6088,
+        "round_trip_bps": 12.61,
+        "ticks_30m": 17446,
         "funding_annual_pct": 1.49
       },
       {
         "symbol": "ACEUSDT",
-        "spread_bps": 1.8717,
-        "round_trip_bps": 12.87,
-        "ticks_30m": 135834,
+        "spread_bps": 2.0819,
+        "round_trip_bps": 13.08,
+        "ticks_30m": 153266,
         "funding_annual_pct": -70.08
       },
       {
         "symbol": "LTCUSDT",
-        "spread_bps": 2.2608,
+        "spread_bps": 2.2591,
         "round_trip_bps": 13.26,
-        "ticks_30m": 63305,
+        "ticks_30m": 63825,
         "funding_annual_pct": 2.28
       },
       {
         "symbol": "HUSDT",
-        "spread_bps": 2.3934,
-        "round_trip_bps": 13.39,
-        "ticks_30m": 41520,
+        "spread_bps": 2.347,
+        "round_trip_bps": 13.35,
+        "ticks_30m": 41847,
         "funding_annual_pct": -124.36
       },
       {
         "symbol": "AKEUSDT",
-        "spread_bps": 2.9361,
-        "round_trip_bps": 13.94,
-        "ticks_30m": 69342,
+        "spread_bps": 2.7037,
+        "round_trip_bps": 13.7,
+        "ticks_30m": 58861,
         "funding_annual_pct": 11.34
       },
       {
         "symbol": "CAPUSDT",
-        "spread_bps": 3.3766,
-        "round_trip_bps": 14.38,
-        "ticks_30m": 104964,
+        "spread_bps": 3.1965,
+        "round_trip_bps": 14.2,
+        "ticks_30m": 79619,
         "funding_annual_pct": -13.11
       },
       {
         "symbol": "VELVETUSDT",
-        "spread_bps": 3.4273,
-        "round_trip_bps": 14.43,
-        "ticks_30m": 73646,
+        "spread_bps": 3.3905,
+        "round_trip_bps": 14.39,
+        "ticks_30m": 86683,
         "funding_annual_pct": 12.23
       },
       {
         "symbol": "HEMIUSDT",
-        "spread_bps": 3.4926,
-        "round_trip_bps": 14.49,
-        "ticks_30m": 73379,
+        "spread_bps": 3.5661,
+        "round_trip_bps": 14.57,
+        "ticks_30m": 78690,
         "funding_annual_pct": 3.73
       },
       {
         "symbol": "BTWUSDT",
-        "spread_bps": 5.1427,
-        "round_trip_bps": 16.14,
-        "ticks_30m": 348729,
+        "spread_bps": 4.8183,
+        "round_trip_bps": 15.82,
+        "ticks_30m": 255749,
         "funding_annual_pct": 44.64
       },
       {
         "symbol": "ADAUSDT",
-        "spread_bps": 5.6972,
+        "spread_bps": 5.7042,
         "round_trip_bps": 16.7,
-        "ticks_30m": 32337,
+        "ticks_30m": 37846,
         "funding_annual_pct": 0.26
       }
     ]
