@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-20T14:36:52.061937+00:00",
+  "generated_at": "2026-08-20T14:51:52.378591+00:00",
   "health": {
     "running": true,
     "state": "running",
-    "uptime_seconds": 31486.244696,
+    "uptime_seconds": 32386.56136,
     "universe_size": 95,
     "streams": [
       "trade",
       "bookTicker"
     ],
-    "quotes_per_sec": 4266.8,
-    "trades_per_sec": 2711.5,
-    "total_messages": 783479778,
-    "median_lag_ms": 148.3,
+    "quotes_per_sec": 4683.6,
+    "trades_per_sec": 2293.5,
+    "total_messages": 789234913,
+    "median_lag_ms": 149.0,
     "stale_streams": [],
     "recent_gaps": [
       {
@@ -119,11 +119,11 @@
     ]
   },
   "inventory": {
-    "db_bytes": 47355345943,
+    "db_bytes": 48556040719,
     "tables": [
       {
         "name": "book_ticker",
-        "bytes": 34923757568
+        "bytes": 33698775040
       },
       {
         "name": "depth_snapshots",
@@ -139,19 +139,19 @@
       },
       {
         "name": "trades",
-        "bytes": 11930116096
+        "bytes": 12208578560
       }
     ],
     "row_counts": {
-      "trades": 206074510,
-      "book_ticker": 156662853,
+      "trades": 207469444,
+      "book_ticker": 161461347,
       "rest_bars": 10233094,
       "funding_rates": 350557,
       "positioning": 103415
     },
     "live_coverage": {
       "from": "2026-08-19T17:00:00.158575+00:00",
-      "to": "2026-08-20T14:38:01.179556+00:00"
+      "to": "2026-08-20T14:52:43.450774+00:00"
     },
     "history": [
       {
@@ -2981,665 +2981,665 @@
         "symbol": "USDCUSDT",
         "spread_bps": 0.0103,
         "round_trip_bps": 11.01,
-        "ticks_30m": 602,
+        "ticks_30m": 616,
         "funding_annual_pct": -0.88
       },
       {
         "symbol": "BTCUSDT",
-        "spread_bps": 0.0185,
+        "spread_bps": 0.018,
         "round_trip_bps": 11.02,
-        "ticks_30m": 1487466,
+        "ticks_30m": 1372454,
         "funding_annual_pct": 10.85
       },
       {
         "symbol": "PAXGUSDT",
-        "spread_bps": 0.0309,
+        "spread_bps": 0.0297,
         "round_trip_bps": 11.03,
-        "ticks_30m": 140544,
+        "ticks_30m": 126556,
         "funding_annual_pct": 2.22
       },
       {
         "symbol": "XAUTUSDT",
-        "spread_bps": 0.0366,
-        "round_trip_bps": 11.04,
-        "ticks_30m": 80549,
+        "spread_bps": 0.0338,
+        "round_trip_bps": 11.03,
+        "ticks_30m": 75271,
         "funding_annual_pct": 2.68
       },
       {
         "symbol": "ETHUSDT",
-        "spread_bps": 0.0498,
+        "spread_bps": 0.0483,
         "round_trip_bps": 11.05,
-        "ticks_30m": 1311581,
+        "ticks_30m": 1209129,
         "funding_annual_pct": 11.59
       },
       {
         "symbol": "BNBUSDT",
-        "spread_bps": 0.1707,
+        "spread_bps": 0.166,
         "round_trip_bps": 11.17,
-        "ticks_30m": 162193,
+        "ticks_30m": 138442,
         "funding_annual_pct": -0.54
       },
       {
-        "symbol": "ZECUSDT",
-        "spread_bps": 0.2613,
-        "round_trip_bps": 11.26,
-        "ticks_30m": 150060,
-        "funding_annual_pct": 8.41
-      },
-      {
         "symbol": "HYPEUSDT",
-        "spread_bps": 0.271,
-        "round_trip_bps": 11.27,
-        "ticks_30m": 208782,
+        "spread_bps": 0.2373,
+        "round_trip_bps": 11.24,
+        "ticks_30m": 187098,
         "funding_annual_pct": 4.25
       },
       {
+        "symbol": "ZECUSDT",
+        "spread_bps": 0.2683,
+        "round_trip_bps": 11.27,
+        "ticks_30m": 143177,
+        "funding_annual_pct": 8.41
+      },
+      {
         "symbol": "TRXUSDT",
-        "spread_bps": 0.315,
-        "round_trip_bps": 11.32,
-        "ticks_30m": 18891,
+        "spread_bps": 0.3253,
+        "round_trip_bps": 11.33,
+        "ticks_30m": 21467,
         "funding_annual_pct": 1.09
       },
       {
         "symbol": "1000PEPEUSDT",
-        "spread_bps": 0.4704,
-        "round_trip_bps": 11.47,
-        "ticks_30m": 145665,
+        "spread_bps": 0.4426,
+        "round_trip_bps": 11.44,
+        "ticks_30m": 139250,
         "funding_annual_pct": 8.74
       },
       {
         "symbol": "BCHUSDT",
-        "spread_bps": 0.5966,
-        "round_trip_bps": 11.6,
-        "ticks_30m": 51669,
+        "spread_bps": 0.5613,
+        "round_trip_bps": 11.56,
+        "ticks_30m": 45984,
         "funding_annual_pct": 2.14
       },
       {
         "symbol": "TAOUSDT",
-        "spread_bps": 0.6129,
-        "round_trip_bps": 11.61,
-        "ticks_30m": 59057,
+        "spread_bps": 0.6415,
+        "round_trip_bps": 11.64,
+        "ticks_30m": 56427,
         "funding_annual_pct": 1.61
       },
       {
         "symbol": "XMRUSDT",
-        "spread_bps": 0.7673,
-        "round_trip_bps": 11.77,
-        "ticks_30m": 15934,
+        "spread_bps": 0.7301,
+        "round_trip_bps": 11.73,
+        "ticks_30m": 15549,
         "funding_annual_pct": 13.06
       },
       {
         "symbol": "XLMUSDT",
-        "spread_bps": 0.8109,
-        "round_trip_bps": 11.81,
-        "ticks_30m": 60823,
+        "spread_bps": 0.7711,
+        "round_trip_bps": 11.77,
+        "ticks_30m": 54558,
         "funding_annual_pct": 11.71
       },
       {
         "symbol": "XRPUSDT",
-        "spread_bps": 0.8376,
+        "spread_bps": 0.8362,
         "round_trip_bps": 11.84,
-        "ticks_30m": 576677,
+        "ticks_30m": 509891,
         "funding_annual_pct": 13.01
       },
       {
         "symbol": "LINKUSDT",
-        "spread_bps": 0.9707,
+        "spread_bps": 0.9717,
         "round_trip_bps": 11.97,
-        "ticks_30m": 71374,
+        "ticks_30m": 67002,
         "funding_annual_pct": 14.27
       },
       {
         "symbol": "AAVEUSDT",
-        "spread_bps": 1.0973,
+        "spread_bps": 1.0962,
         "round_trip_bps": 12.1,
-        "ticks_30m": 52138,
+        "ticks_30m": 45567,
         "funding_annual_pct": 14.12
       },
       {
         "symbol": "ENAUSDT",
-        "spread_bps": 1.1205,
-        "round_trip_bps": 12.12,
-        "ticks_30m": 77122,
+        "spread_bps": 1.1309,
+        "round_trip_bps": 12.13,
+        "ticks_30m": 78884,
         "funding_annual_pct": -7.04
       },
       {
         "symbol": "SOLUSDT",
-        "spread_bps": 1.1576,
+        "spread_bps": 1.1587,
         "round_trip_bps": 12.16,
-        "ticks_30m": 428812,
+        "ticks_30m": 375531,
         "funding_annual_pct": 0.81
       },
       {
         "symbol": "ARBUSDT",
-        "spread_bps": 1.2178,
+        "spread_bps": 1.2172,
         "round_trip_bps": 12.22,
-        "ticks_30m": 33693,
+        "ticks_30m": 31442,
         "funding_annual_pct": 8.86
       },
       {
         "symbol": "DOTUSDT",
-        "spread_bps": 1.2373,
+        "spread_bps": 1.2365,
         "round_trip_bps": 12.24,
-        "ticks_30m": 61374,
+        "ticks_30m": 54161,
         "funding_annual_pct": 6.74
       },
       {
-        "symbol": "ALLOUSDT",
-        "spread_bps": 1.2609,
-        "round_trip_bps": 12.26,
-        "ticks_30m": 11839,
-        "funding_annual_pct": -1.2
-      },
-      {
         "symbol": "DOGEUSDT",
-        "spread_bps": 1.2989,
+        "spread_bps": 1.2985,
         "round_trip_bps": 12.3,
-        "ticks_30m": 237854,
+        "ticks_30m": 209878,
         "funding_annual_pct": 12.72
       },
       {
-        "symbol": "LITUSDT",
-        "spread_bps": 1.3102,
-        "round_trip_bps": 12.31,
-        "ticks_30m": 85104,
-        "funding_annual_pct": 4.82
-      },
-      {
         "symbol": "OPUSDT",
-        "spread_bps": 1.3375,
-        "round_trip_bps": 12.34,
-        "ticks_30m": 44038,
+        "spread_bps": 1.3179,
+        "round_trip_bps": 12.32,
+        "ticks_30m": 38758,
         "funding_annual_pct": 0.48
       },
       {
         "symbol": "PENDLEUSDT",
-        "spread_bps": 1.3972,
-        "round_trip_bps": 12.4,
-        "ticks_30m": 12379,
+        "spread_bps": 1.3279,
+        "round_trip_bps": 12.33,
+        "ticks_30m": 12182,
         "funding_annual_pct": 2.9
       },
       {
+        "symbol": "LITUSDT",
+        "spread_bps": 1.3508,
+        "round_trip_bps": 12.35,
+        "ticks_30m": 91338,
+        "funding_annual_pct": 4.82
+      },
+      {
         "symbol": "SUIUSDT",
-        "spread_bps": 1.4004,
+        "spread_bps": 1.398,
         "round_trip_bps": 12.4,
-        "ticks_30m": 107787,
+        "ticks_30m": 99604,
         "funding_annual_pct": 5.43
       },
       {
-        "symbol": "XPLUSDT",
-        "spread_bps": 1.4923,
-        "round_trip_bps": 12.49,
-        "ticks_30m": 39154,
-        "funding_annual_pct": 3.47
+        "symbol": "ALLOUSDT",
+        "spread_bps": 1.4578,
+        "round_trip_bps": 12.46,
+        "ticks_30m": 17238,
+        "funding_annual_pct": -1.2
       },
       {
         "symbol": "AVAXUSDT",
-        "spread_bps": 1.512,
-        "round_trip_bps": 12.51,
-        "ticks_30m": 65240,
+        "spread_bps": 1.4851,
+        "round_trip_bps": 12.49,
+        "ticks_30m": 74911,
         "funding_annual_pct": 7.82
       },
       {
-        "symbol": "FILUSDT",
-        "spread_bps": 1.515,
-        "round_trip_bps": 12.51,
-        "ticks_30m": 77110,
-        "funding_annual_pct": 12.56
+        "symbol": "EULUSDT",
+        "spread_bps": 1.4958,
+        "round_trip_bps": 12.5,
+        "ticks_30m": 12627,
+        "funding_annual_pct": -37.04
       },
       {
         "symbol": "HBARUSDT",
-        "spread_bps": 1.5156,
-        "round_trip_bps": 12.52,
-        "ticks_30m": 59750,
+        "spread_bps": 1.4965,
+        "round_trip_bps": 12.5,
+        "ticks_30m": 45697,
         "funding_annual_pct": 1.05
       },
       {
+        "symbol": "XPLUSDT",
+        "spread_bps": 1.5014,
+        "round_trip_bps": 12.5,
+        "ticks_30m": 37185,
+        "funding_annual_pct": 3.47
+      },
+      {
+        "symbol": "FILUSDT",
+        "spread_bps": 1.5334,
+        "round_trip_bps": 12.53,
+        "ticks_30m": 68140,
+        "funding_annual_pct": 12.56
+      },
+      {
         "symbol": "ETCUSDT",
-        "spread_bps": 1.6176,
-        "round_trip_bps": 12.62,
-        "ticks_30m": 38487,
+        "spread_bps": 1.6035,
+        "round_trip_bps": 12.6,
+        "ticks_30m": 32153,
         "funding_annual_pct": 2.37
       },
       {
         "symbol": "PENGUUSDT",
-        "spread_bps": 1.6799,
-        "round_trip_bps": 12.68,
-        "ticks_30m": 54879,
+        "spread_bps": 1.6094,
+        "round_trip_bps": 12.61,
+        "ticks_30m": 53083,
         "funding_annual_pct": -0.49
       },
       {
-        "symbol": "EULUSDT",
-        "spread_bps": 1.7223,
-        "round_trip_bps": 12.72,
-        "ticks_30m": 14826,
-        "funding_annual_pct": -37.04
-      },
-      {
         "symbol": "ASTERUSDT",
-        "spread_bps": 1.7282,
-        "round_trip_bps": 12.73,
-        "ticks_30m": 33063,
+        "spread_bps": 1.6528,
+        "round_trip_bps": 12.65,
+        "ticks_30m": 29673,
         "funding_annual_pct": 4.86
       },
       {
         "symbol": "VVVUSDT",
-        "spread_bps": 1.7541,
-        "round_trip_bps": 12.75,
-        "ticks_30m": 17715,
+        "spread_bps": 1.7358,
+        "round_trip_bps": 12.74,
+        "ticks_30m": 18792,
         "funding_annual_pct": -4.14
       },
       {
         "symbol": "ZROUSDT",
-        "spread_bps": 1.7963,
-        "round_trip_bps": 12.8,
-        "ticks_30m": 11104,
+        "spread_bps": 1.8795,
+        "round_trip_bps": 12.88,
+        "ticks_30m": 11347,
         "funding_annual_pct": 4.86
       },
       {
         "symbol": "APTUSDT",
-        "spread_bps": 1.9309,
-        "round_trip_bps": 12.93,
-        "ticks_30m": 31941,
+        "spread_bps": 1.9148,
+        "round_trip_bps": 12.91,
+        "ticks_30m": 25965,
         "funding_annual_pct": -1.38
       },
       {
-        "symbol": "BTWUSDT",
-        "spread_bps": 1.9681,
-        "round_trip_bps": 12.97,
-        "ticks_30m": 146277,
-        "funding_annual_pct": 45.44
-      },
-      {
-        "symbol": "GPSUSDT",
-        "spread_bps": 1.9788,
-        "round_trip_bps": 12.98,
-        "ticks_30m": 34223,
-        "funding_annual_pct": 5.15
-      },
-      {
-        "symbol": "VIRTUALUSDT",
-        "spread_bps": 2.0076,
-        "round_trip_bps": 13.01,
-        "ticks_30m": 23454,
-        "funding_annual_pct": -4.67
-      },
-      {
         "symbol": "WLFIUSDT",
-        "spread_bps": 2.0293,
-        "round_trip_bps": 13.03,
-        "ticks_30m": 29710,
+        "spread_bps": 1.9424,
+        "round_trip_bps": 12.94,
+        "ticks_30m": 26955,
         "funding_annual_pct": -3.24
       },
       {
+        "symbol": "VIRTUALUSDT",
+        "spread_bps": 1.947,
+        "round_trip_bps": 12.95,
+        "ticks_30m": 21598,
+        "funding_annual_pct": -4.67
+      },
+      {
+        "symbol": "GPSUSDT",
+        "spread_bps": 2.0149,
+        "round_trip_bps": 13.01,
+        "ticks_30m": 34412,
+        "funding_annual_pct": 5.15
+      },
+      {
+        "symbol": "ETHFIUSDT",
+        "spread_bps": 2.0356,
+        "round_trip_bps": 13.04,
+        "ticks_30m": 21658,
+        "funding_annual_pct": 0.66
+      },
+      {
         "symbol": "1000SHIBUSDT",
-        "spread_bps": 2.1172,
+        "spread_bps": 2.1209,
         "round_trip_bps": 13.12,
-        "ticks_30m": 53487,
+        "ticks_30m": 47788,
         "funding_annual_pct": 3.4
       },
       {
         "symbol": "LTCUSDT",
-        "spread_bps": 2.1231,
+        "spread_bps": 2.123,
         "round_trip_bps": 13.12,
-        "ticks_30m": 49734,
+        "ticks_30m": 47787,
         "funding_annual_pct": 13.07
       },
       {
-        "symbol": "ETHFIUSDT",
-        "spread_bps": 2.1951,
-        "round_trip_bps": 13.2,
-        "ticks_30m": 26108,
-        "funding_annual_pct": 0.66
-      },
-      {
-        "symbol": "INJUSDT",
-        "spread_bps": 2.3758,
-        "round_trip_bps": 13.38,
-        "ticks_30m": 33852,
-        "funding_annual_pct": -2.06
-      },
-      {
-        "symbol": "ACEUSDT",
-        "spread_bps": 2.3962,
-        "round_trip_bps": 13.4,
-        "ticks_30m": 283980,
-        "funding_annual_pct": -8.2
-      },
-      {
-        "symbol": "AKEUSDT",
-        "spread_bps": 2.421,
-        "round_trip_bps": 13.42,
-        "ticks_30m": 22683,
-        "funding_annual_pct": 20.13
+        "symbol": "BTWUSDT",
+        "spread_bps": 2.1601,
+        "round_trip_bps": 13.16,
+        "ticks_30m": 141810,
+        "funding_annual_pct": 45.44
       },
       {
         "symbol": "CAPUSDT",
-        "spread_bps": 2.4358,
-        "round_trip_bps": 13.44,
-        "ticks_30m": 16450,
+        "spread_bps": 2.3257,
+        "round_trip_bps": 13.33,
+        "ticks_30m": 15923,
         "funding_annual_pct": -15.89
       },
       {
-        "symbol": "UNIUSDT",
-        "spread_bps": 2.7872,
-        "round_trip_bps": 13.79,
-        "ticks_30m": 77878,
-        "funding_annual_pct": 14.27
+        "symbol": "INJUSDT",
+        "spread_bps": 2.3722,
+        "round_trip_bps": 13.37,
+        "ticks_30m": 29687,
+        "funding_annual_pct": -2.06
+      },
+      {
+        "symbol": "AKEUSDT",
+        "spread_bps": 2.4823,
+        "round_trip_bps": 13.48,
+        "ticks_30m": 25232,
+        "funding_annual_pct": 20.13
       },
       {
         "symbol": "REUSDT",
-        "spread_bps": 2.854,
-        "round_trip_bps": 13.85,
-        "ticks_30m": 56979,
+        "spread_bps": 2.5918,
+        "round_trip_bps": 13.59,
+        "ticks_30m": 39630,
         "funding_annual_pct": -97.16
       },
       {
-        "symbol": "HEIUSDT",
-        "spread_bps": 2.8596,
-        "round_trip_bps": 13.86,
-        "ticks_30m": 12578,
-        "funding_annual_pct": -1.7
+        "symbol": "ACEUSDT",
+        "spread_bps": 2.6668,
+        "round_trip_bps": 13.67,
+        "ticks_30m": 335947,
+        "funding_annual_pct": -8.2
+      },
+      {
+        "symbol": "BOMEUSDT",
+        "spread_bps": 2.6889,
+        "round_trip_bps": 13.69,
+        "ticks_30m": 480296,
+        "funding_annual_pct": 4.39
+      },
+      {
+        "symbol": "UNIUSDT",
+        "spread_bps": 2.7987,
+        "round_trip_bps": 13.8,
+        "ticks_30m": 78791,
+        "funding_annual_pct": 14.27
       },
       {
         "symbol": "WLDUSDT",
-        "spread_bps": 2.886,
-        "round_trip_bps": 13.89,
-        "ticks_30m": 95582,
+        "spread_bps": 2.8807,
+        "round_trip_bps": 13.88,
+        "ticks_30m": 83891,
         "funding_annual_pct": 3.93
       },
       {
         "symbol": "ONDOUSDT",
-        "spread_bps": 2.9015,
+        "spread_bps": 2.8962,
         "round_trip_bps": 13.9,
-        "ticks_30m": 65574,
+        "ticks_30m": 61010,
         "funding_annual_pct": 2.88
       },
       {
-        "symbol": "BOMEUSDT",
-        "spread_bps": 2.9999,
-        "round_trip_bps": 14.0,
-        "ticks_30m": 539957,
-        "funding_annual_pct": 4.39
-      },
-      {
         "symbol": "PUMPUSDT",
-        "spread_bps": 3.0201,
-        "round_trip_bps": 14.02,
-        "ticks_30m": 185853,
+        "spread_bps": 2.9472,
+        "round_trip_bps": 13.95,
+        "ticks_30m": 165432,
         "funding_annual_pct": 5.05
       },
       {
+        "symbol": "HEMIUSDT",
+        "spread_bps": 2.9961,
+        "round_trip_bps": 14.0,
+        "ticks_30m": 63600,
+        "funding_annual_pct": -1.67
+      },
+      {
         "symbol": "BANKUSDT",
-        "spread_bps": 3.1166,
-        "round_trip_bps": 14.12,
-        "ticks_30m": 17320,
+        "spread_bps": 3.077,
+        "round_trip_bps": 14.08,
+        "ticks_30m": 15707,
         "funding_annual_pct": -1.65
       },
       {
         "symbol": "TIAUSDT",
-        "spread_bps": 3.1546,
-        "round_trip_bps": 14.15,
-        "ticks_30m": 25488,
+        "spread_bps": 3.1307,
+        "round_trip_bps": 14.13,
+        "ticks_30m": 23959,
         "funding_annual_pct": 2.18
       },
       {
-        "symbol": "HEMIUSDT",
-        "spread_bps": 3.2213,
-        "round_trip_bps": 14.22,
-        "ticks_30m": 90785,
-        "funding_annual_pct": -1.67
+        "symbol": "HEIUSDT",
+        "spread_bps": 3.1608,
+        "round_trip_bps": 14.16,
+        "ticks_30m": 16699,
+        "funding_annual_pct": -1.7
       },
       {
         "symbol": "EDENUSDT",
-        "spread_bps": 3.2696,
-        "round_trip_bps": 14.27,
-        "ticks_30m": 14100,
+        "spread_bps": 3.2038,
+        "round_trip_bps": 14.2,
+        "ticks_30m": 13714,
         "funding_annual_pct": -1.55
       },
       {
-        "symbol": "DASHUSDT",
-        "spread_bps": 3.3056,
-        "round_trip_bps": 14.31,
-        "ticks_30m": 23507,
-        "funding_annual_pct": 1.09
-      },
-      {
         "symbol": "HOMEUSDT",
-        "spread_bps": 3.3383,
-        "round_trip_bps": 14.34,
-        "ticks_30m": 36686,
+        "spread_bps": 3.274,
+        "round_trip_bps": 14.27,
+        "ticks_30m": 30707,
         "funding_annual_pct": -63.83
       },
       {
-        "symbol": "CYSUSDT",
-        "spread_bps": 3.4034,
-        "round_trip_bps": 14.4,
-        "ticks_30m": 18879,
-        "funding_annual_pct": 13.78
+        "symbol": "DASHUSDT",
+        "spread_bps": 3.2897,
+        "round_trip_bps": 14.29,
+        "ticks_30m": 22146,
+        "funding_annual_pct": 1.09
+      },
+      {
+        "symbol": "LDOUSDT",
+        "spread_bps": 3.3535,
+        "round_trip_bps": 14.35,
+        "ticks_30m": 31961,
+        "funding_annual_pct": 3.12
       },
       {
         "symbol": "HUSDT",
-        "spread_bps": 3.4339,
-        "round_trip_bps": 14.43,
-        "ticks_30m": 81038,
+        "spread_bps": 3.4058,
+        "round_trip_bps": 14.41,
+        "ticks_30m": 67086,
         "funding_annual_pct": -41.73
       },
       {
         "symbol": "KAITOUSDT",
-        "spread_bps": 3.4857,
-        "round_trip_bps": 14.49,
-        "ticks_30m": 50032,
+        "spread_bps": 3.4993,
+        "round_trip_bps": 14.5,
+        "ticks_30m": 48486,
         "funding_annual_pct": -36.44
       },
       {
-        "symbol": "LDOUSDT",
-        "spread_bps": 3.5192,
-        "round_trip_bps": 14.52,
-        "ticks_30m": 22925,
-        "funding_annual_pct": 3.12
-      },
-      {
-        "symbol": "TRIAUSDT",
-        "spread_bps": 3.8112,
-        "round_trip_bps": 14.81,
-        "ticks_30m": 21607,
-        "funding_annual_pct": 5.05
+        "symbol": "CYSUSDT",
+        "spread_bps": 3.6182,
+        "round_trip_bps": 14.62,
+        "ticks_30m": 18494,
+        "funding_annual_pct": 13.78
       },
       {
         "symbol": "CRVUSDT",
-        "spread_bps": 3.9805,
-        "round_trip_bps": 14.98,
-        "ticks_30m": 22845,
+        "spread_bps": 3.8978,
+        "round_trip_bps": 14.9,
+        "ticks_30m": 23203,
         "funding_annual_pct": 6.16
       },
       {
-        "symbol": "1000BONKUSDT",
-        "spread_bps": 4.0811,
-        "round_trip_bps": 15.08,
-        "ticks_30m": 26480,
-        "funding_annual_pct": -9.64
-      },
-      {
         "symbol": "BIOUSDT",
-        "spread_bps": 4.2117,
-        "round_trip_bps": 15.21,
-        "ticks_30m": 16771,
+        "spread_bps": 4.0152,
+        "round_trip_bps": 15.02,
+        "ticks_30m": 17249,
         "funding_annual_pct": 1.49
       },
       {
+        "symbol": "TRIAUSDT",
+        "spread_bps": 4.0452,
+        "round_trip_bps": 15.05,
+        "ticks_30m": 16969,
+        "funding_annual_pct": 5.05
+      },
+      {
+        "symbol": "1000BONKUSDT",
+        "spread_bps": 4.062,
+        "round_trip_bps": 15.06,
+        "ticks_30m": 24310,
+        "funding_annual_pct": -9.64
+      },
+      {
         "symbol": "TUTUSDT",
-        "spread_bps": 4.2155,
+        "spread_bps": 4.2214,
         "round_trip_bps": 15.22,
-        "ticks_30m": 41957,
+        "ticks_30m": 50019,
         "funding_annual_pct": 3.15
       },
       {
-        "symbol": "BRUSDT",
-        "spread_bps": 4.2264,
-        "round_trip_bps": 15.23,
-        "ticks_30m": 21361,
-        "funding_annual_pct": 6.15
+        "symbol": "MAGMAUSDT",
+        "spread_bps": 4.27,
+        "round_trip_bps": 15.27,
+        "ticks_30m": 72997,
+        "funding_annual_pct": 13.33
       },
       {
         "symbol": "ICPUSDT",
-        "spread_bps": 4.4823,
-        "round_trip_bps": 15.48,
-        "ticks_30m": 23966,
+        "spread_bps": 4.3785,
+        "round_trip_bps": 15.38,
+        "ticks_30m": 24875,
         "funding_annual_pct": 6.92
       },
       {
         "symbol": "TREEUSDT",
-        "spread_bps": 4.5194,
-        "round_trip_bps": 15.52,
-        "ticks_30m": 8495,
+        "spread_bps": 4.4948,
+        "round_trip_bps": 15.49,
+        "ticks_30m": 7891,
         "funding_annual_pct": -4.23
       },
       {
-        "symbol": "MAGMAUSDT",
-        "spread_bps": 4.5455,
-        "round_trip_bps": 15.55,
-        "ticks_30m": 79836,
-        "funding_annual_pct": 13.33
-      },
-      {
-        "symbol": "SKYAIUSDT",
-        "spread_bps": 4.8377,
-        "round_trip_bps": 15.84,
-        "ticks_30m": 54160,
-        "funding_annual_pct": 19.07
-      },
-      {
-        "symbol": "VELVETUSDT",
-        "spread_bps": 4.8939,
-        "round_trip_bps": 15.89,
-        "ticks_30m": 27522,
-        "funding_annual_pct": 13.77
-      },
-      {
-        "symbol": "ADAUSDT",
-        "spread_bps": 5.1636,
-        "round_trip_bps": 16.16,
-        "ticks_30m": 127082,
-        "funding_annual_pct": 11.46
-      },
-      {
         "symbol": "ONGUSDT",
-        "spread_bps": 5.4152,
-        "round_trip_bps": 16.42,
-        "ticks_30m": 325406,
+        "spread_bps": 4.8178,
+        "round_trip_bps": 15.82,
+        "ticks_30m": 292258,
         "funding_annual_pct": -14.92
       },
       {
+        "symbol": "VELVETUSDT",
+        "spread_bps": 4.8235,
+        "round_trip_bps": 15.82,
+        "ticks_30m": 32566,
+        "funding_annual_pct": 13.77
+      },
+      {
+        "symbol": "BRUSDT",
+        "spread_bps": 4.9872,
+        "round_trip_bps": 15.99,
+        "ticks_30m": 27490,
+        "funding_annual_pct": 6.15
+      },
+      {
+        "symbol": "SKYAIUSDT",
+        "spread_bps": 5.0223,
+        "round_trip_bps": 16.02,
+        "ticks_30m": 68644,
+        "funding_annual_pct": 19.07
+      },
+      {
+        "symbol": "ADAUSDT",
+        "spread_bps": 5.1844,
+        "round_trip_bps": 16.18,
+        "ticks_30m": 104517,
+        "funding_annual_pct": 11.46
+      },
+      {
         "symbol": "PRLUSDT",
-        "spread_bps": 5.7497,
-        "round_trip_bps": 16.75,
-        "ticks_30m": 18014,
+        "spread_bps": 5.2069,
+        "round_trip_bps": 16.21,
+        "ticks_30m": 13498,
         "funding_annual_pct": -2.63
       },
       {
-        "symbol": "NEARUSDT",
-        "spread_bps": 5.8271,
-        "round_trip_bps": 16.83,
-        "ticks_30m": 63339,
-        "funding_annual_pct": 10.4
-      },
-      {
         "symbol": "APRUSDT",
-        "spread_bps": 5.8977,
-        "round_trip_bps": 16.9,
-        "ticks_30m": 12306,
+        "spread_bps": 5.8175,
+        "round_trip_bps": 16.82,
+        "ticks_30m": 11912,
         "funding_annual_pct": 13.37
       },
       {
+        "symbol": "NEARUSDT",
+        "spread_bps": 5.8465,
+        "round_trip_bps": 16.85,
+        "ticks_30m": 58362,
+        "funding_annual_pct": 10.4
+      },
+      {
         "symbol": "MUBARAKUSDT",
-        "spread_bps": 6.1644,
-        "round_trip_bps": 17.16,
-        "ticks_30m": 14117,
+        "spread_bps": 6.0823,
+        "round_trip_bps": 17.08,
+        "ticks_30m": 15046,
         "funding_annual_pct": 5.03
       },
       {
-        "symbol": "TRUMPUSDT",
-        "spread_bps": 6.3824,
-        "round_trip_bps": 17.38,
-        "ticks_30m": 97450,
-        "funding_annual_pct": -8.09
-      },
-      {
         "symbol": "WIFUSDT",
-        "spread_bps": 6.4419,
-        "round_trip_bps": 17.44,
-        "ticks_30m": 49552,
+        "spread_bps": 6.3991,
+        "round_trip_bps": 17.4,
+        "ticks_30m": 38065,
         "funding_annual_pct": 2.58
       },
       {
+        "symbol": "TRUMPUSDT",
+        "spread_bps": 6.4059,
+        "round_trip_bps": 17.41,
+        "ticks_30m": 90311,
+        "funding_annual_pct": -8.09
+      },
+      {
         "symbol": "FARTCOINUSDT",
-        "spread_bps": 6.6707,
-        "round_trip_bps": 17.67,
-        "ticks_30m": 33228,
+        "spread_bps": 6.6264,
+        "round_trip_bps": 17.63,
+        "ticks_30m": 33979,
         "funding_annual_pct": 7.18
       },
       {
-        "symbol": "METUSDT",
-        "spread_bps": 6.7198,
-        "round_trip_bps": 17.72,
-        "ticks_30m": 11735,
-        "funding_annual_pct": 4.37
-      },
-      {
         "symbol": "GALAUSDT",
-        "spread_bps": 6.8155,
-        "round_trip_bps": 17.82,
-        "ticks_30m": 31688,
+        "spread_bps": 6.7369,
+        "round_trip_bps": 17.74,
+        "ticks_30m": 31799,
         "funding_annual_pct": 0.46
       },
       {
+        "symbol": "METUSDT",
+        "spread_bps": 6.7842,
+        "round_trip_bps": 17.78,
+        "ticks_30m": 14729,
+        "funding_annual_pct": 4.37
+      },
+      {
         "symbol": "ATOMUSDT",
-        "spread_bps": 6.8596,
-        "round_trip_bps": 17.86,
-        "ticks_30m": 15445,
+        "spread_bps": 6.8429,
+        "round_trip_bps": 17.84,
+        "ticks_30m": 13035,
         "funding_annual_pct": -8.2
       },
       {
         "symbol": "ONUSDT",
-        "spread_bps": 6.8661,
-        "round_trip_bps": 17.87,
-        "ticks_30m": 21908,
+        "spread_bps": 7.0939,
+        "round_trip_bps": 18.09,
+        "ticks_30m": 15555,
         "funding_annual_pct": 12.48
       },
       {
         "symbol": "FETUSDT",
-        "spread_bps": 7.5309,
-        "round_trip_bps": 18.53,
-        "ticks_30m": 19673,
+        "spread_bps": 7.523,
+        "round_trip_bps": 18.52,
+        "ticks_30m": 16817,
         "funding_annual_pct": 3.69
       },
       {
         "symbol": "STARUSDT",
-        "spread_bps": 8.3783,
-        "round_trip_bps": 19.38,
-        "ticks_30m": 65570,
+        "spread_bps": 8.1287,
+        "round_trip_bps": 19.13,
+        "ticks_30m": 42864,
         "funding_annual_pct": 24.66
       },
       {
         "symbol": "BEATUSDT",
-        "spread_bps": 8.7165,
-        "round_trip_bps": 19.72,
-        "ticks_30m": 83934,
+        "spread_bps": 8.7052,
+        "round_trip_bps": 19.71,
+        "ticks_30m": 84549,
         "funding_annual_pct": -26.05
       },
       {
         "symbol": "PORTALUSDT",
-        "spread_bps": 9.4773,
-        "round_trip_bps": 20.48,
-        "ticks_30m": 8976,
+        "spread_bps": 9.4741,
+        "round_trip_bps": 20.47,
+        "ticks_30m": 11114,
         "funding_annual_pct": 0.11
       },
       {
         "symbol": "REDUSDT",
-        "spread_bps": 9.9047,
-        "round_trip_bps": 20.9,
-        "ticks_30m": 29781,
+        "spread_bps": 9.8233,
+        "round_trip_bps": 20.82,
+        "ticks_30m": 20141,
         "funding_annual_pct": -29.41
       }
     ]
